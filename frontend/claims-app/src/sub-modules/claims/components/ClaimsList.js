@@ -10,7 +10,7 @@ const ClaimsList = (props) => {
     );
   }
   return (
-    <ul>
+    <ul className="claims-list">
       {props.items.map((aClaim) => {
         return <ClaimEdit key={aClaim.id} id={aClaim.id}></ClaimEdit>;
       })}
