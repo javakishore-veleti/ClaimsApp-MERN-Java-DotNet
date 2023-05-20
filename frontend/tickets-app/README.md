@@ -14,6 +14,8 @@ npm audit fix --force
 npm audit fix --force
 npm audit fix --force
 
+# Bootstrap install
+npm install react-bootstrap bootstrap
 
 ```
 
