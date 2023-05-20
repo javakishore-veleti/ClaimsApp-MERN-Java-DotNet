@@ -38,6 +38,13 @@ touch src/sub-modules/tickets/pages/TicketCreatePage.js
 touch src/sub-modules/tickets/pages/TicketEditPage.js
 
 
+mkdir -p src/sub-modules/shared/pages
+touch src/sub-modules/shared/pages/HomePage.js
+touch src/sub-modules/shared/pages/HomePage.css
+
+touch src/sub-modules/shared/pages/AboutPage.js
+touch src/sub-modules/shared/pages/AboutPage.css
+
 mkdir -p src/sub-modules/shared/components/navbar
 touch src/sub-modules/shared/components/navbar/AppNavBarBootStrap.js
 touch src/sub-modules/shared/components/navbar/AppNavBarBootStrap.css
@@ -47,6 +54,9 @@ touch src/sub-modules/shared/components/navbar/AppNavBarBootStrap.css
 
 # Add JS code for Bootstrap navbar in src/sub-modules/shared/components/navbar/AppNavBarBootStrap.js
 # Code in  AppNavBarBootStrap.js is copied from this react-bootstrap website page https://react-bootstrap.github.io/components/navbar/
+
+# Now do coding of src/sub-modules/shared/pages/HomePage.js
+
 
 
 ```
