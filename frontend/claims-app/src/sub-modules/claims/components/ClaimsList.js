@@ -1,19 +1,25 @@
 import React from "react";
 
 import ClaimsEdit from "./ClaimsEdit";
+import Card from "../../shared/components/UIElements/Card";
+import "./ClaimsList.css";
+
 const ClaimsList = (props) => {
   if (props.items.length === 0) {
     return (
-      <div class="center">
-        <h2>No Claims found</h2>
+      <div className="center">
+        <Card>
+          <h2>No claims found.</h2>
+        </Card>
       </div>
     );
   }
+
   return (
     <ul className="claims-list">
-      {props.items.map((aClaim) => {
-        return <ClaimEdit key={aClaim.id} id={aClaim.id}></ClaimEdit>;
-      })}
+      {props.items.map((claim) => (
+        <ClaimsEdit key={claim.id} id={claim.id} />
+      ))}
     </ul>
   );
 };

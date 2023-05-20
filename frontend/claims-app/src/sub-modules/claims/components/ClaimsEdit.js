@@ -1,14 +1,19 @@
 import React from "react";
-const ClaimsEdit = (props) => {
+import { Link } from "react-router-dom";
+
+import Card from "../../shared/components/UIElements/Card";
+import "./ClaimsEdit.css";
+
+const ClaimsItem = (props) => {
   return (
-    <li className="claims-edit">
-      <div className="claims-edit__container">
-        <div className="claims-edit__id">
-          <h2>{props.id}</h2>
-        </div>
-      </div>
+    <li className="user-item">
+      <Card className="user-item__content">
+        <div>{props.id}</div>
+        <Link to={`/${props.id}/places`}></Link>
+        <div>{props.id}</div>
+      </Card>
     </li>
   );
 };
 
-export default ClaimsEdit;
+export default ClaimsItem;
