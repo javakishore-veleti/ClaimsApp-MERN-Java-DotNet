@@ -7,7 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ```shell
 npx create-react-app tickets-app
 
-cd claims-app
+cd tickets-app
 
 npm install --save react-router-dom
 npm audit fix --force
@@ -16,6 +16,38 @@ npm audit fix --force
 
 # Bootstrap install
 npm install react-bootstrap bootstrap
+
+mkdir -p src/sub-modules/tickets/components
+mkdir -p src/sub-modules/tickets/pages
+touch src/sub-modules/tickets/components/TicketsList.js
+touch src/sub-modules/tickets/components/TicketsList.css
+touch src/sub-modules/tickets/components/TicketsSearch.js
+touch src/sub-modules/tickets/components/TicketsSearch.css
+touch src/sub-modules/tickets/components/TicketCreate.js
+touch src/sub-modules/tickets/components/TicketCreate.css
+
+touch src/sub-modules/tickets/components/TicketEdit.js
+touch src/sub-modules/tickets/components/TicketEdit.css
+
+touch src/sub-modules/tickets/pages/TicketsListPage.js
+
+touch src/sub-modules/tickets/pages/TicketsSearchPage.js
+
+touch src/sub-modules/tickets/pages/TicketCreatePage.js
+
+touch src/sub-modules/tickets/pages/TicketEditPage.js
+
+
+mkdir -p src/sub-modules/shared/components/navbar
+touch src/sub-modules/shared/components/navbar/AppNavBarBootStrap.js
+touch src/sub-modules/shared/components/navbar/AppNavBarBootStrap.css
+
+# in public/index.html Add below line
+# href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+
+# Add JS code for Bootstrap navbar in src/sub-modules/shared/components/navbar/AppNavBarBootStrap.js
+# Code in  AppNavBarBootStrap.js is copied from this react-bootstrap website page https://react-bootstrap.github.io/components/navbar/
+
 
 ```
 
